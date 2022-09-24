@@ -1,13 +1,13 @@
 ---
 title: 'Bevölkerungswachstum und Bevölkerungsdichte Schweden 2021 '
 output:
-  html_document:
-    df_print: paged
   flexdashboard::flex_dashboard:
     storyboard: yes
     css: styles.css
     logo: logo.png
     favicon: favicon.png
+  html_document:
+    df_print: paged
   word_document: default
   pdf_document: default
 ---
@@ -46,7 +46,7 @@ Karten {.storyboard}
 =====================================
 
 
-### Übersichtskarte Bevölkerung A
+### Übersichtskarte Bevölkerung 
 
 
 Schweden 2021
