@@ -73,12 +73,12 @@ region$label <- paste("<p>", region$Län, "</p>",
 #add shapefile with the addPolygons function
 m2 <- leaflet(data = region) %>%
   addTiles(group = "OpenStreetMap") %>%
-        addProviderTiles(providers$Esri.WorldStreetMap, options = tileOptions(minZoom=0, maxZoom=13), group = "Esri.WorldStreetMap") %>%
+        addProviderTiles(providers$Esri.WorldStreetMap, options = tileOptions(minZoom=0, maxZoom=13), group = "Esri WorldStreetMap") %>%
       
-      addProviderTiles(providers$Esri.WorldImagery, options=tileOptions(minZoom=0, maxZoom=13), group = "Esri.WorldImagery") %>%
+      addProviderTiles(providers$Esri.WorldImagery, options=tileOptions(minZoom=0, maxZoom=13), group = "Esri WorldImagery") %>%
       
       addLayersControl(
-        baseGroups = c("OpenStreetMap", "Esri.WorldStreetMap", "Esri.WorldImagery"),
+        baseGroups = c("Open Street Map", "Esri World Street Map", "Esri World Imagery"),
         #overlayGroups = c("Markers", "Points"),
         options = layersControlOptions(collapsed=TRUE)
       ) %>%
@@ -143,7 +143,7 @@ m3 <- leaflet(data = region) %>%
       addProviderTiles(providers$Esri.WorldImagery, options=tileOptions(minZoom=0, maxZoom=13), group = "Esri.WorldImagery") %>%
       
       addLayersControl(
-        baseGroups = c("OpenStreetMap", "Esri.WorldStreetMap", "Esri.WorldImagery"),
+        baseGroups = c("Open Street Map", "Esri World Street Map", "Esri World Imagery"),
         #overlayGroups = c("Markers", "Points"),
         options = layersControlOptions(collapsed=TRUE)
       ) %>%
@@ -209,7 +209,7 @@ m <- leaflet(data = region) %>%
       addProviderTiles(providers$Esri.WorldImagery, options=tileOptions(minZoom=0, maxZoom=13), group = "Esri.WorldImagery") %>%
       
       addLayersControl(
-        baseGroups = c("OpenStreetMap", "Esri.WorldStreetMap", "Esri.WorldImagery"),
+        baseGroups = c("Open Street Map", "Esri World Street Map", "Esri World Imagery"),
         #overlayGroups = c("Markers", "Points"),
         options = layersControlOptions(collapsed=TRUE)
       ) %>%
